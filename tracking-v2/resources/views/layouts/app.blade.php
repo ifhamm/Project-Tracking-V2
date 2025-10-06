@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'MWS')</title>
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <title>@yield('title', 'PPC - MWS')</title>
+    @vite('resources/css/app.css')
 </head>
-<body>
-    <div class="container">
-        @yield('content')
-    </div>
-    <script src="{{ asset('js/app.js') }}"></script>
+<body class="bg-slate-900 text-white antialiased">
+    @yield('content')
+
+    @yield('scripts')
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
 </body>
 </html>
