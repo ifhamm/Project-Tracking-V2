@@ -37,7 +37,7 @@
     <div x-show="isOpen" class="md:hidden bg-black/60 backdrop-blur-md border-t border-white/20 mt-2" style="display:none">
       <a href="#home" class="block px-3 py-2 text-white hover:text-blue-300">Home</a>
       <a href="#dashboard-preview" class="block px-3 py-2 text-white hover:text-blue-300">Dashboard</a>
-      <a href="#" class="block mt-3 px-3 py-2 bg-blue-600 text-center rounded-lg hover:bg-blue-700">Login</a>
+      <a href="login" class="block mt-3 px-3 py-2 bg-blue-600 text-center rounded-lg hover:bg-blue-700">Login</a>
     </div>
   </div>
 </nav>
@@ -96,7 +96,7 @@
       Pantau, rencanakan, dan kendalikan perawatan pesawat secara real-time untuk operasi yang andal dan tepat waktu
     </p>
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
-      <a href="#" class="inline-flex items-center px-8 py-4 bg-blue-600 text-white text-lg font-semibold rounded-xl hover:bg-blue-700 transition">Login →</a>
+      <a href="login" class="inline-flex items-center px-8 py-4 bg-blue-600 text-white text-lg font-semibold rounded-xl hover:bg-blue-700 transition">Login →</a>
       <a href="#dashboard-preview" class="inline-flex items-center px-8 py-4 bg-white/90 text-slate-800 text-lg font-semibold rounded-xl hover:bg-white">View Dashboard</a>
     </div>
   </div>
