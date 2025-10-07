@@ -19,7 +19,7 @@
                     <h2 class="text-xl font-semibold text-gray-800 mb-2">Selamat Datang</h2>
                     <p class="text-gray-500 text-sm">Masuk dengan NIK dan password</p>
                 </div>
-                <form method="POST" action="{{ route('login') }}" class="space-y-5">
+                <form method="POST" action="{{ route('login.process') }}" class="space-y-5" id="loginForm">
                     @csrf
                     <div class="space-y-2">
                         <label for="nik" class="block text-sm font-medium text-gray-700">NIK</label>
@@ -56,8 +56,6 @@
                 </form>
             </div>
         </div>
-
-        {{-- Akun Demo --}}
         <div class="mt-6 p-4 bg-white rounded-xl border border-gray-200 shadow-lg">
             <h6 class="font-semibold text-gray-700 mb-3 text-center">
                 <i class="fas fa-users mr-2 text-blue-600"></i> Gunakan Akun Demo (Klik untuk mengisi)
@@ -119,6 +117,7 @@ document.querySelectorAll('.demo-account-btn').forEach(btn => {
     btn.addEventListener('click', () => {
         document.getElementById('nik').value = btn.dataset.nik;
         document.getElementById('password').value = btn.dataset.password;
+        document.getElementById('loginForm').submit();
     });
 });
 document.getElementById('togglePassword').addEventListener('click', () => {

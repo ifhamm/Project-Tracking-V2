@@ -19,7 +19,7 @@
       <div class="hidden md:flex items-center space-x-8">
         <a href="#home" class="text-white hover:text-blue-300 px-3 py-2 text-sm font-medium transition-colors duration-200">Home</a>
         <a href="#dashboard-preview" class="text-white hover:text-blue-300 px-3 py-2 text-sm font-medium transition-colors duration-200">Dashboard</a>
-        <a href="#" class="inline-flex items-center px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-xl hover:bg-blue-700 transition">Login</a>
+        <a href="login" class="inline-flex items-center px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-xl hover:bg-blue-700 transition">Login</a>
       </div>
 
       <div class="md:hidden">
