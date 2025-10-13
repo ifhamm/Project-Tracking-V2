@@ -184,5 +184,9 @@
     </div>
 
     <script src="{{ asset('js/sidebar.js') }}"></script>
-    <script src="{{ asset('js/create_mws.js') }}" defer></script>
 @endsection
+
+@section('scripts')
+    @vite(['resources/js/create_mws.js'])
+@endsection
+

@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('mws_parts', function (Blueprint $table) {
             $table->id('id_mws_part');
-            $table->string('part_id');
+            $table->string('part_id')->unique();
             $table->bigInteger('id_customer')->nullable();
             $table->foreign('id_customer')->references('id_customer')->on('customers')->onDelete('cascade');
             $table->string('urgent_request_by')->nullable();
