@@ -108,4 +108,10 @@ class MwsPartController extends Controller
         ]);
     }
 
+    public function index()
+    {
+        $mwsParts = \App\Models\mws_parts::orderByDesc('created_at')->get();
+        return view('mws_part.index', compact('mwsParts'));
+    }
+
 }

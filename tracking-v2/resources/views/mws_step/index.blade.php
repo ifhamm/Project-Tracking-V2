@@ -3,7 +3,7 @@
 @section('title', 'Langkah MWS - ' . $mwsPart->title)
 
 @section('content')
-    <div class="flex h-screen bg-gray-50">
+    <div class="flex h-screen bg-gray-50 text-gray-800">
         @includeIf('components.sidebar')
 
         <div class="flex-1 flex flex-col overflow-hidden">

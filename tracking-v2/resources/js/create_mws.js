@@ -24,7 +24,9 @@ document.addEventListener("DOMContentLoaded", function () {
             const dropdown = document.getElementById("jobTypeDropdown");
 
             if (!list || !input) {
-                console.error("Elemen jobTypeList atau jobTypeSearch tidak ditemukan!");
+                console.error(
+                    "Elemen jobTypeList atau jobTypeSearch tidak ditemukan!"
+                );
                 return;
             }
 

@@ -7,7 +7,7 @@
     <title>@yield('title', 'PPC - MWS')</title>
     @vite('resources/css/app.css')
 </head>
-<body class="bg-slate-900 text-white antialiased">
+<body class="antialiased">
     @yield('content')
 
     @yield('scripts')

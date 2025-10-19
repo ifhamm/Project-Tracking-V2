@@ -13,7 +13,7 @@ class MwsStepController extends Controller
         $mwsPart = mws_parts::with('mws_steps')->findOrFail($id_mws_part);
         $steps = $mwsPart->mws_steps()->orderBy('step_no')->get();
 
-        return view('mwsStep.index', compact('mwsPart', 'steps'));
+        return view('mws_step.index', compact('mwsPart', 'steps'));
     }
 
     public function store(Request $request)
